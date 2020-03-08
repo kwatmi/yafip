@@ -173,3 +173,17 @@ letter-spacing: 0.16px;
 color: #5D5D5D;
 
 }
+
+.footer{
+	background: #0C2A46;
+	color: #fff;
+	font-size: 14px;
+}
+.newsletter-text{
+	font-size: 18px!important;
+}
+
+.newsletter-btn{
+	background: #ED6639;
+	border: 0px solid #ED6639;
+}
