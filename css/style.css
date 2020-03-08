@@ -187,3 +187,7 @@ color: #5D5D5D;
 	background: #ED6639;
 	border: 0px solid #ED6639;
 }
+.followus-align{
+	display: inline-flex;
+	align-items: center;
+}
