@@ -17,6 +17,10 @@ body {
 }
 
 
+.nav-h{
+	height: 55px;
+}
+
 .header-txt{
 	width: 586.9px;
 height: 165px;
@@ -101,6 +105,17 @@ margin-top: 60px;
 .submit-btn{
 	height: 55px;
 	width: 222.96px;
+height: 55px;
+left: 64px;
+top: 573px;
+font-weight: 500;
+font-size: 14px;
+background: #ED6639;
+
+}
+ .login-btn{
+	height: 55px;
+	width: 178px;
 height: 55px;
 left: 64px;
 top: 573px;

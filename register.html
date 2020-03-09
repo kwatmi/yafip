@@ -17,7 +17,7 @@
     <div>
         <nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-gray-800">
             <div class="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8">
-                <div class="flex items-center justify-between h-16 px-8">
+                <div class="flex items-center justify-between nav-h px-8">
                     <div class="flex items-center">
                         <div class="flex-shrink-0">
                             <svg width="70" height="29" viewBox="0 0 70 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,8 +43,10 @@
                                 <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
                                 <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Courses</a>
                                 <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Gallery</a>
+                                <a href="#" title="">  <button class=" text-white  ml-8 py-2 px-5 login-btn">Login</button></a>
                                
                             </div>
+
                         </div>
                           
                            <!--  <div @click.away="open = false" class="ml-3 relative" x-data="{ open: false }">
