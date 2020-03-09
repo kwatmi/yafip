@@ -98,6 +98,17 @@ background: #ED6639;
 margin-top: 60px;
 }
 
+.submit-btn{
+	height: 55px;
+	width: 222.96px;
+height: 55px;
+left: 64px;
+top: 573px;
+font-weight: 500;
+font-size: 14px;
+background: #ED6639;
+
+}
 .viewall-btn{
 	height: 55px;
 	width: 222.96px;
@@ -190,4 +201,28 @@ color: #5D5D5D;
 .followus-align{
 	display: inline-flex;
 	align-items: center;
+}
+.header-section{
+	background-image: url(../img/registerbg.png);
+}
+.header-text{
+	font-size: 33px;
+	color: #fff;
+	padding: 90px 0;
+}
+
+.main-bg{
+	background: url(../img/bg-img.svg);
+	width: auto;
+	height: 100%;
+
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: table;
+  width: 100%;
+  height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
