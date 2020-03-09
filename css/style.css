@@ -226,3 +226,20 @@ color: #5D5D5D;
   -o-background-size: cover;
   background-size: cover;
 }
+
+.form-bg{
+	background: #F4F4F4;
+	border: 1px solid #333146;
+}
+
+
+.bx--text-input,
+.bx--select-input,
+textarea{
+	background: #fff !important;
+}
+.input-width{
+	width: 15rem !important;
+    min-width: 8rem !important;
+    max-width: 28rem !important;
+}
