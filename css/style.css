@@ -3,11 +3,12 @@ html, body{
     height: 100%;
     padding: 0;
 margin: 0;
+scroll-behavior: smooth;
 }
 
 
 body {
-    font-family: Montserrat;
+    font-family: Montserrat !important;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -21,67 +22,6 @@ body {
 	height: 55px;
 }
 
-.header-txt{
-	width: 586.9px;
-height: 165px;
-left: 65px;
-top: 214px;
-
-font-family: Montserrat;
-font-style: normal;
-font-weight: 300;
-font-size: 44px;
-line-height: 55px;
-/* or 125% */
-
-letter-spacing: -0.24px;
-
-color: #333146;
-}
-.header-txt-bold{
-	font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 44px;
-line-height: 55px;
-color: #333146;
-/* or 125% */
-
-letter-spacing: -0.24px;
-
-color: #333146;
-}
-
-.header-txt-colored{
-	font-style: normal;
-font-weight: 300;
-font-size: 44px;
-line-height: 55px;
-/* or 125% */
-
-letter-spacing: -0.24px;
-
-color: #FF4000;
-
-}
-
-.header-txt-p{
-	width: 599px;
-height: 104px;
-left: 65px;
-top: 409px;
-
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 19px;
-line-height: 26px;
-/* or 137% */
-
-letter-spacing: -0.24px;
-
-color: #5D5D5D;
-}
 .heaader-img{
 	overflow: hidden;
 }
@@ -145,27 +85,6 @@ font-weight: 500;
 font-size: 14px;
 color: #fff;
 background: #ED6639;
-}
-
-.about-section{
-	width: 557px;
-	font-style: normal;
-font-weight: 300;
-font-size: 18px;
-}
-.about-yafip{
-	font-weight: 500;
-font-size: 32px;
-line-height: 18px;
-color: #333146;
-
-}
-.about-yafip-p{
-	width: 557px;
-
-font-weight: normal;
-font-size: 18px;
-line-height: 25px;
 }
 
 
@@ -258,3 +177,333 @@ textarea{
     min-width: 8rem !important;
     max-width: 28rem !important;
 }
+
+
+/* Small (sm) */
+@media (max-width: 640px) { 
+.header-txt{
+width: 320px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 250;
+font-size: 30px;
+line-height: 40px;
+/* or 125% */
+
+letter-spacing: -0.24px;
+
+color: #333146;
+}
+.header-txt-bold{
+	font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 40px;
+color: #333146;
+/* or 125% */
+
+letter-spacing: -0.24px;
+
+color: #333146;
+}
+
+.header-txt-colored{
+	font-style: normal;
+font-weight: 200;
+font-size: 30px;
+line-height: 40px;
+/* or 125% */
+
+letter-spacing: -0.24px;
+
+color: #FF4000 !important;
+
+}
+
+.header-txt-p{
+	width: 320px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+/* or 137% */
+
+letter-spacing: -0.24px;
+
+color: #5D5D5D;
+} 
+/**/
+
+
+.about-section{
+	width: 340px;
+	font-style: normal;
+font-weight: 300;
+font-size: 16px;
+}
+.about-yafip{
+	font-weight: 300;
+font-size: 25px;
+line-height: 18px;
+color: #333146;
+
+}
+.about-yafip-p{
+	width: 340px;
+
+font-weight: normal;
+font-size: 14px;
+line-height: 25px;
+}
+ }
+
+/* Medium (md) */
+@media (min-width: 768px) { 
+
+.header-txt{
+	width: 330px;
+
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 40px;
+/* or 125% */
+
+letter-spacing: -0.24px;
+
+color: #333146;
+}
+.header-txt-bold{
+	font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 40px;
+color: #333146;
+/* or 125% */
+
+letter-spacing: -0.24px;
+
+color: #333146;
+}
+
+.header-txt-colored{
+	font-style: normal;
+font-weight: 200;
+font-size: 30px;
+line-height: 40px;
+/* or 125% */
+
+letter-spacing: -0.24px;
+
+color: #FF4000 important;
+
+}
+
+.header-txt-p{
+	width: 330px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 26px;
+/* or 137% */
+
+letter-spacing: -0.24px;
+
+color: #5D5D5D;
+} 
+
+/**/
+.about-section{
+	width: 370px;
+	font-style: normal;
+font-weight: 300;
+font-size: 18px;
+}
+.about-yafip{
+	font-weight: 300;
+font-size: 25px;
+line-height: 18px;
+color: #333146;
+
+}
+.about-yafip-p{
+	width: 370px;
+
+font-weight: normal;
+font-size: 14px;
+line-height: 25px;
+}
+
+
+
+
+}
+
+/* Large (lg) */
+@media (min-width: 1024px) { 
+
+
+
+.header-txt{
+	width: 586.9px;
+height: 165px;
+left: 65px;
+top: 214px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 44px;
+line-height: 55px;
+/* or 125% */
+
+letter-spacing: -0.24px;
+
+color: #333146;
+}
+.header-txt-bold{
+	font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 44px;
+line-height: 55px;
+color: #333146;
+/* or 125% */
+
+letter-spacing: -0.24px;
+
+color: #333146;
+}
+
+.header-txt-colored{
+	font-style: normal;
+font-weight: 300;
+font-size: 44px;
+line-height: 55px;
+/* or 125% */
+
+letter-spacing: -0.24px;
+
+color: #FF4000;
+
+}
+
+.header-txt-p{
+	width: 599px;
+height: 104px;
+left: 65px;
+top: 409px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 26px;
+/* or 137% */
+
+letter-spacing: -0.24px;
+
+color: #5D5D5D;
+}
+.about-section{
+	width: 557px;
+	font-style: normal;
+font-weight: 300;
+font-size: 18px;
+}
+.about-yafip{
+	font-weight: 500;
+font-size: 32px;
+line-height: 18px;
+color: #333146;
+
+}
+.about-yafip-p{
+	width: 557px;
+
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+}
+
+
+ }
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) { 
+
+
+
+.header-txt{
+	width: 586.9px;
+height: 165px;
+left: 65px;
+top: 214px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 44px;
+line-height: 55px;
+/* or 125% */
+
+letter-spacing: -0.24px;
+
+color: #333146;
+}
+.header-txt-bold{
+	font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 44px;
+line-height: 55px;
+color: #333146;
+/* or 125% */
+
+letter-spacing: -0.24px;
+
+color: #333146;
+}
+
+.header-txt-colored{
+	font-style: normal;
+font-weight: 300;
+font-size: 44px;
+line-height: 55px;
+/* or 125% */
+
+letter-spacing: -0.24px;
+
+color: #FF4000;
+
+}
+
+.header-txt-p{
+	width: 599px;
+height: 104px;
+left: 65px;
+top: 409px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 26px;
+/* or 137% */
+
+letter-spacing: -0.24px;
+
+color: #5D5D5D;
+}
+
+
+
+ }
