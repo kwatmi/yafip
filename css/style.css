@@ -285,11 +285,21 @@ line-height: 25px;
 	 height="276";
 	 /*width="830" height="746"*/
 }
+.input-widths{
+	width: 15rem !important;
+    min-width: 8rem !important;
+    max-width: 28rem !important;
+}
 
  }
 
 /* Medium (md) */
 @media (min-width: 768px) { 
+	.input-widths{
+	width: 15rem !important;
+    min-width: 8rem !important;
+    max-width: 28rem !important;
+}
 
 .header-txt{
 	width: 330px;
@@ -383,7 +393,11 @@ line-height: 25px;
 @media (min-width: 1024px) { 
 
 
-
+.input-width{
+	width:100%;
+    min-width: 100%;
+    max-width: 100%;
+}
 .header-txt{
 	width: 586.9px;
 height: 165px;
@@ -555,6 +569,13 @@ color: #5D5D5D;
 	
 	 width="830" 
 	 height="746"
+}
+
+
+.input-width{
+	width:100%;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 
