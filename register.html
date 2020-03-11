@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/carbon-components/css/carbon-components.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <<script src="jquery.serialize-object.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
 </head>
 
@@ -95,14 +97,14 @@
             <p class="header-text  text-center">REGISTRATION PAGE</p>
         </div>
         <div class="main-bg  ">
-            <div class="w-5/6 lg:w-4/6 mx-auto my-12 form-bg px-12">
+            <form class="w-5/6 lg:w-4/6 mx-auto my-12 form-bg px-12" id="register_form">
                 <div class="flex flex-wrap  pt-12 ">
                     <div class="w-full sm:w-1/1 md:w-1/1 lg:w-2/6 xl:w-2/6 ">
                         <div class="bx--form-item ">
                             <div class="bx--select ">
                                 <label for="select-id" class="bx--label">Title</label>
                                 <div class="bx--select-input__wrapper">
-                                    <select id="select-id" class="bx--select-input input-width ">
+                                    <select id="select-id" class="bx--select-input input-width " name="form_field_1">
                                         <option class="bx--select-option" value=""  disabled selected hidden>Mr </option>  
                                         <option class="bx--select-option" value="option1" >Mrs </option> 
                                         <option class="bx--select-option" value="option1" >Miss </option> 
@@ -117,9 +119,9 @@
                     </div>
                     <div class="w-full sm:w-1/1 md:w-1/1 lg:w-4/6 xl:w-4/6  sm:pl-0 lg:pl-6 pt-8 lg:pt-0">
                          <div class="bx--form-item input-widths ">
-                            <label for="text-input-3" class="bx--label">Full Name</label>
+                            <label for="text-input-2" class="bx--label">Full Name</label>
                             
-                            <input id="text-input-3" type="text" class="bx--text-input" placeholder="Petella College">
+                            <input  name="form_field_2" id="text-input-2" type="text" class="bx--text-input" placeholder="Petella College">
                         </div>
 
                     </div>
@@ -129,14 +131,14 @@
                         <div class="bx--form-item input-width">
                             <label for="text-input-3" class="bx--label">Email</label>
                             
-                            <input id="text-input-3" type="email" class="bx--text-input" placeholder="petellacollege@.com">
+                            <input  name="form_field_3" id="text-input-3" type="email" class="bx--text-input" placeholder="petellacollege@.com">
                         </div>
                     </div>
                     <div class="w-full sm:w-1/1 md:w-1/1 lg:w-4/6 xl:w-4/6  sm:pl-0 lg:pl-6  pt-8 lg:pt-0">
                          <div class="bx--form-item input-widths ">
-                            <label for="text-input-3" class="bx--label">House address</label>
+                            <label for="text-input-4" class="bx--label">House address</label>
                             
-                            <input id="text-input-3" type="text" class="bx--text-input" placeholder="No. 4 Dokaje road ungwan romi kaduna.">
+                            <input name="form_field_4" id="text-input-4" type="text" class="bx--text-input" placeholder="No. 4 Dokaje road ungwan romi kaduna.">
                         </div>
 
                     </div>
@@ -144,9 +146,9 @@
                 <div class="flex flex-wrap  pt-8 lg:pt-12 ">
                     <div class="w-full sm:w-1/1 md:w-1/1 lg:w-2/6 xl:w-2/6 ">
                         <div class="bx--form-item input-width ">
-                            <label for="text-input-3" class="bx--label">Phone number</label>
+                            <label for="text-input-5" class="bx--label">Phone number</label>
                             
-                            <input id="text-input-3" type="text" class="bx--text-input" placeholder="09087654267">
+                            <input  name="form_field_5" id="text-input-5" type="text" class="bx--text-input" placeholder="09087654267">
                         </div>
 
                     </div>
@@ -155,7 +157,7 @@
                             <div class="bx--select">
                                 <label for="select-id" class="bx--label">Marital status</label>
                                 <div class="bx--select-input__wrapper">
-                                    <select id="select-id" class="bx--select-input input-width">
+                                    <select id="select-id" class="bx--select-input input-width" name="form_field_6">
                                         <option class="bx--select-option" value=""  disabled selected hidden>Married </option>  
                                         <option class="bx--select-option" value="option1" >Single </option> 
                                         <option class="bx--select-option" value="option1" >Widow </option> 
@@ -169,9 +171,9 @@
                     </div>
                     <div class="w-full sm:w-1/1 md:w-1/1 lg:w-2/6 xl:w-2/6   sm:pl-0 lg:pl-12 pt-8 lg:pt-0">
                         <div class="bx--form-item input-width ">
-                            <label for="text-input-3" class="bx--label">Field of study</label>
+                            <label for="text-input-7" class="bx--label">Field of study</label>
                             
-                            <input id="text-input-3" type="text" class="bx--text-input" placeholder="Business Administration">
+                            <input name="form_field_7" id="text-input-7" type="text" class="bx--text-input" placeholder="Business Administration">
                         </div>
 
                     </div>
@@ -183,13 +185,13 @@
                             <div class="bx--select">
                                 <label for="select-id" class="bx--label">Highest Educational Qualification</label>
                                 <div class="bx--select-input__wrapper">
-                                    <select id="select-id" class="bx--select-input input-width ">
+                                    <select name="form_field_8" id="select-id" class="bx--select-input input-width ">
                                         <option class="bx--select-option" value=""  disabled selected hidden>SSCE</option>  
-                                        <option class="bx--select-option" value="option1" >ND </option> 
-                                        <option class="bx--select-option" value="option1" >HND</option> 
-                                        <option class="bx--select-option" value="option1" >BSC </option> 
-                                        <option class="bx--select-option" value="option1" >MSC </option> 
-                                        <option class="bx--select-option" value="option1" >PHD </option> 
+                                        <option class="bx--select-option" value="ND" >ND </option> 
+                                        <option class="bx--select-option" value="HND" >HND</option> 
+                                        <option class="bx--select-option" value="BSC" >BSC </option> 
+                                        <option class="bx--select-option" value="MSC" >MSC </option> 
+                                        <option class="bx--select-option" value="PHD" >PHD </option> 
                                         
                                     </select>
                                     <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--select__arrow" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M5 6L0 1 .7.3 5 4.6 9.3.3l.7.7z"></path></svg>
@@ -199,9 +201,9 @@
                     </div>
                     <div class="w-full sm:w-1/1 md:w-1/1 lg:w-2/6 xl:w-2/6  sm:pl-0 lg:pl- pt-8 lg:pt-0">
                         <div class="bx--form-item input-width ">
-                            <label for="text-input-3" class="bx--label">Date of birth</label>
+                            <label for="text-input-9" class="bx--label">Date of birth</label>
                             
-                            <input id="text-input-3" type="date" class="bx--text-input" placeholder="Business Administration">
+                            <input  name="form_field_9" id="text-input-9" type="date" class="bx--text-input" placeholder="Business Administration">
                         </div>
 
                     </div>
@@ -210,11 +212,11 @@
                             <div class="bx--select">
                                 <label for="select-id" class="bx--label">Ability to read and write in English</label>
                                 <div class="bx--select-input__wrapper">
-                                    <select id="select-id" class="bx--select-input input-width">
+                                    <select id="select-id" class="bx--select-input input-width" name="form_field_10">
                                         <option class="bx--select-option" value=""  disabled selected hidden>Very good </option>  
-                                        <option class="bx--select-option" value="option1" >Good </option> 
-                                        <option class="bx--select-option" value="option1" >Not bad </option> 
-                                        <option class="bx--select-option" value="option1" >ok </option> 
+                                        <option class="bx--select-option" value="Good" >Good </option> 
+                                        <option class="bx--select-option" value="notbad" >Not bad </option> 
+                                        <option class="bx--select-option" value="ok" >ok </option> 
                                         
                                     </select>
                                     <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--select__arrow" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M5 6L0 1 .7.3 5 4.6 9.3.3l.7.7z"></path></svg>
@@ -227,23 +229,23 @@
                 <div class="flex flex-wrap   pt-8 lg:pt-12 ">
                     <div class="w-full sm:w-1/1 md:w-1/1 lg:w-2/6 xl:w-2/6 ">
                         <div class="bx--form-item input-width ">
-                            <label for="text-input-3" class="bx--label">Referee's name</label>
+                            <label for="text-input-11" class="bx--label">Referee's name</label>
                             
-                            <input id="text-input-3" type="text" class="bx--text-input" placeholder="Business Administration">
+                            <input name="form_field_11" id="text-input-11" type="text" class="bx--text-input" placeholder="Business Administration">
                         </div>
                     </div>
                     <div class="w-full sm:w-1/1 md:w-1/1 lg:w-2/6 xl:w-2/6   sm:pl-0 lg:pl-6 pt-8 lg:pt-0">
                         <div class="bx--form-item  input-width">
-                            <label for="text-input-3" class="bx--label">Referee's email</label>
+                            <label for="text-input-12" class="bx--label">Referee's email</label>
                             
-                            <input id="text-input-3" type="email" class="bx--text-input" placeholder="Business Administration">
+                            <input name="form_field_12" id="text-input-12" type="email" class="bx--text-input" placeholder="Business Administration">
                         </div>
                     </div>
                     <div class="w-full sm:w-1/1 md:w-1/1 lg:w-2/6 xl:w-2/6  sm:pl-0 lg:pl-12  pt-8 lg:pt-0">
                         <div class="bx--form-item  input-width">
-                            <label for="text-input-3" class="bx--label">Referee's number</label>
+                            <label for="text-input-13" class="bx--label">Referee's number</label>
                             
-                            <input id="text-input-3" type="text" class="bx--text-input" placeholder="Business Administration">
+                            <input name="form_field_13" id="text-input-13" type="text" class="bx--text-input" placeholder="Business Administration">
                         </div>
                     </div>
                   
@@ -253,10 +255,10 @@
                     <div class="w-full sm:w-1/1 md:w-1/1 lg:w-2/6 xl:w-2/6 ">
                         <div class="bx--form-item">
                             <div class="bx--select">
-                                <label for="select-id" class="bx--label">Preferred Vocational Training</label>
+                                <label for="select-id-14" class="bx--label">Preferred Vocational Training</label>
                                 <div class="bx--select-input__wrapper">
-                                    <select id="select-id" class="bx--select-input  input-width">
-                                        <option class="bx--select-option" value=""  disabled selected hidden>Make Up</option>  
+                                    <select name="form_field_14" id="select-id-14" class="bx--select-input  input-width">
+                                        <option class="bx--select-option" value="Makeup"  disabled selected hidden>Make Up</option>  
                                         <option class="bx--select-option" value="option1" >Make Up2 </option> 
                                         <option class="bx--select-option" value="option2" >Make Up3 </option> 
                                         <option class="bx--select-option" value="option3" >Make Up4</option> 
@@ -269,9 +271,9 @@
                     </div>
                     <div class="w-full sm:w-1/1 md:w-1/1 lg:w-4/6 xl:w-4/6  sm:pl-0 lg:pl-6  pt-8 lg:pt-0">
                         <div class="bx--form-item  input-widths">
-                            <label for="text-input-3" class="bx--label">Reasons for choice of vocational training </label>
+                            <label for="text-input-15" class="bx--label">Reasons for choice of vocational training </label>
                             
-                           <textarea id="text-area-2" class="bx--text-area"  rows="4" cols="50"  placeholder="Business Administration"></textarea>
+                           <textarea name="form_field_15" id="text-area-2" class="bx--text-area"  rows="4" cols="50"  placeholder="Business Administration"></textarea>
                         </div>
 
                     </div>
@@ -282,12 +284,12 @@
                         
                     </div>
                     <div class="w-full sm:w-1/1 md:w-1/1 lg:w-4/6 xl:w-2/6  sm:pl-0 lg:pl-6 ">
-                        <button class=" text-white  py-2 px-5 submit-btn">Submit</button>
+                        <button class=" text-white  py-2 px-5 submit-btn" id="submit-form" >Submit</button>
 
                     </div>
                 </div>
                  
-            </div>        
+            </form>        
         </div>
         
 
@@ -348,6 +350,25 @@
     
           
     </main>
+
+
+
+    <script>
+      var $form = $('form#register_form'),
+    url = 'https://script.google.com/macros/s/AKfycbwUoLq7ekvdhF0sby2Rp-MPYjjWyT9qD8Y3johokMIdwid3CT0/exec'
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})  
+    </script>
 
 </body>
 
