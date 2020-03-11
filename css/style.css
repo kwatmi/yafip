@@ -180,7 +180,7 @@ textarea{
 
 
 /* Small (sm) */
-@media (max-width: 640px) { 
+@media (min-width: 320px) { 
 .header-txt{
 width: 320px;
 
@@ -260,6 +260,11 @@ font-size: 14px;
 line-height: 25px;
 }
 
+.about-yafip-svg{
+	width="330";
+	 height="276";
+	 /*width="830" height="746"*/
+}
 
  }
 
@@ -342,6 +347,11 @@ color: #333146;
 font-weight: normal;
 font-size: 14px;
 line-height: 25px;
+}
+.about-yafip-svg{
+	width="380";
+	 height="326";
+	 /*width="830" height="746"*/
 }
 
 
@@ -435,10 +445,23 @@ font-weight: normal;
 font-size: 18px;
 line-height: 25px;
 }
+.about-yafip-svg{
+	
+	 width="830" ;
+	 height="746";
+}
 
 
 
+ }
 
+ /*mac*/
+ @media(min-width: 1439){
+ 	.about-yafip-svg{
+	
+	 width="830"
+	 height="746"
+}
  }
 
 /* Extra Large (xl) */
@@ -508,7 +531,13 @@ letter-spacing: -0.24px;
 color: #5D5D5D;
 }
 
+.about-yafip-svg{
+	
+	 width="830" 
+	 height="746"
+}
 
 
 
  }
+
