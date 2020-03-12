@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/carbon-components/css/carbon-components.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <<script src="jquery.serialize-object.min.js"></script>
+    <!-- <script src="jquery.serialize-object.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
 </head>
 
@@ -97,14 +97,14 @@
             <p class="header-text  text-center">REGISTRATION PAGE</p>
         </div>
         <div class="main-bg  ">
-            <form class="w-5/6 lg:w-4/6 mx-auto my-12 form-bg px-12" id="register_form">
+            <form class="w-5/6 lg:w-4/6 mx-auto my-12 form-bg px-12" id="register_form" name="submit-to-google-sheet">
                 <div class="flex flex-wrap  pt-12 ">
                     <div class="w-full sm:w-1/1 md:w-1/1 lg:w-2/6 xl:w-2/6 ">
                         <div class="bx--form-item ">
                             <div class="bx--select ">
                                 <label for="select-id" class="bx--label">Title</label>
                                 <div class="bx--select-input__wrapper">
-                                    <select id="select-id" class="bx--select-input input-width " name="form_field_1">
+                                    <select id="select-id" class="bx--select-input input-width " name="title">
                                         <option class="bx--select-option" value=""  disabled selected hidden>Mr </option>  
                                         <option class="bx--select-option" value="option1" >Mrs </option> 
                                         <option class="bx--select-option" value="option1" >Miss </option> 
@@ -121,7 +121,7 @@
                          <div class="bx--form-item input-widths ">
                             <label for="text-input-2" class="bx--label">Full Name</label>
                             
-                            <input  name="form_field_2" id="text-input-2" type="text" class="bx--text-input" placeholder="Petella College">
+                            <input  name="name" id="text-input-2" type="text" class="bx--text-input" placeholder="Petella College">
                         </div>
 
                     </div>
@@ -131,14 +131,14 @@
                         <div class="bx--form-item input-width">
                             <label for="text-input-3" class="bx--label">Email</label>
                             
-                            <input  name="form_field_3" id="text-input-3" type="email" class="bx--text-input" placeholder="petellacollege@.com">
+                            <input  name="email" id="text-input-3" type="email" class="bx--text-input" placeholder="petellacollege@.com">
                         </div>
                     </div>
                     <div class="w-full sm:w-1/1 md:w-1/1 lg:w-4/6 xl:w-4/6  sm:pl-0 lg:pl-6  pt-8 lg:pt-0">
                          <div class="bx--form-item input-widths ">
                             <label for="text-input-4" class="bx--label">House address</label>
                             
-                            <input name="form_field_4" id="text-input-4" type="text" class="bx--text-input" placeholder="No. 4 Dokaje road ungwan romi kaduna.">
+                            <input name="address" id="text-input-4" type="text" class="bx--text-input" placeholder="No. 4 Dokaje road ungwan romi kaduna.">
                         </div>
 
                     </div>
@@ -148,7 +148,7 @@
                         <div class="bx--form-item input-width ">
                             <label for="text-input-5" class="bx--label">Phone number</label>
                             
-                            <input  name="form_field_5" id="text-input-5" type="text" class="bx--text-input" placeholder="09087654267">
+                            <input  name="number" id="text-input-5" type="text" class="bx--text-input" placeholder="09087654267">
                         </div>
 
                     </div>
@@ -157,7 +157,7 @@
                             <div class="bx--select">
                                 <label for="select-id" class="bx--label">Marital status</label>
                                 <div class="bx--select-input__wrapper">
-                                    <select id="select-id" class="bx--select-input input-width" name="form_field_6">
+                                    <select id="select-id" class="bx--select-input input-width" name="status">
                                         <option class="bx--select-option" value=""  disabled selected hidden>Married </option>  
                                         <option class="bx--select-option" value="option1" >Single </option> 
                                         <option class="bx--select-option" value="option1" >Widow </option> 
@@ -173,7 +173,7 @@
                         <div class="bx--form-item input-width ">
                             <label for="text-input-7" class="bx--label">Field of study</label>
                             
-                            <input name="form_field_7" id="text-input-7" type="text" class="bx--text-input" placeholder="Business Administration">
+                            <input name="education" id="text-input-7" type="text" class="bx--text-input" placeholder="Business Administration">
                         </div>
 
                     </div>
@@ -284,7 +284,7 @@
                         
                     </div>
                     <div class="w-full sm:w-1/1 md:w-1/1 lg:w-4/6 xl:w-2/6  sm:pl-0 lg:pl-6 ">
-                        <button class=" text-white  py-2 px-5 submit-btn" id="submit-form" >Submit</button>
+                        <button class=" text-white  py-2 px-5 submit-btn" id="submit-form" type="submit" >Submit</button>
 
                     </div>
                 </div>
@@ -350,25 +350,23 @@
     
           
     </main>
+    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 
 
 
-    <script>
-      var $form = $('form#register_form'),
-    url = 'https://script.google.com/macros/s/AKfycbwUoLq7ekvdhF0sby2Rp-MPYjjWyT9qD8Y3johokMIdwid3CT0/exec'
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwUoLq7ekvdhF0sby2Rp-MPYjjWyT9qD8Y3johokMIdwid3CT0/exec'
+  const form = document.forms['submit-to-google-sheet']
 
-$('#submit-form').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).success(
-    // do something
-  );
-})  
-    </script>
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 
 </body>
 
