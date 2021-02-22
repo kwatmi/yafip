@@ -165,6 +165,14 @@ color: #5D5D5D;
 	padding: 90px 0;
 }
 
+.test-images{
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+}
+
+
+
 .main-bg{
 	background: url(../img/bg-img.svg);
 	width: auto;
