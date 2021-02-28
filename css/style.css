@@ -594,3 +594,8 @@ color: #5D5D5D;
 	width: 400px;
 	height: 400px;
 }
+
+
+.bx--select__arrow{
+	display: none;
+}
